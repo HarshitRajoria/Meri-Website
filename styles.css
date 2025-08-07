@@ -43,6 +43,12 @@ body {
 .nav-links {
   display: flex;
   gap: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
 }
 
 .nav-links a {
@@ -72,7 +78,7 @@ body {
 
 .main-content {
   max-width: 910px;
-  margin: 100px auto 0;
+  margin: 60px auto 0;
   padding: 0 20px;
   font-family: "DM Sans", sans-serif;
   display: flex;
@@ -130,7 +136,7 @@ body {
 
 .timeline-heading {
   font-family: "Newsreader", serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -153,13 +159,12 @@ body {
   position: relative;
 }
 
-/* vertical line */
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: 32px; /* centers line behind icon */
+  left: 32px;
   top: 0;
-  bottom: -147px; /* ensures the line reaches into next block */
+  bottom: -147px;
   width: 1px;
   background-color: black;
   z-index: 0;
@@ -184,26 +189,26 @@ body {
 
 .footer {
   max-width: 910px;
-  margin: 80px auto 60px;
+  margin: 8px auto 6px;
   padding: 0 20px;
   font-family: "DM Sans", sans-serif;
 }
 
 .footer-top-line,
 .footer-bottom-line {
-  height: 2px;
+  height: 4px;
   background-color: black;
-  width: 100%;
+  width: 910px;
 }
 
 .footer-top-line {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:end;
   flex-wrap: nowrap;
 }
 
@@ -228,7 +233,7 @@ body {
 .footer-icons {
   display: flex;
   gap: 12px;
-  align-items: center;
+  align-items:center;
 }
 
 .footer-icons img {
@@ -244,5 +249,5 @@ body {
 }
 
 .footer-bottom-line {
-  margin-top: 60px;
+  margin-top: 40px;
 }
