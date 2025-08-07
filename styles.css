@@ -181,3 +181,68 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
+
+.footer {
+  max-width: 910px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer-top-line,
+.footer-bottom-line {
+  height: 2px;
+  background-color: black;
+  width: 100%;
+}
+
+.footer-top-line {
+  margin-bottom: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-heading {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Newsreader", serif;
+  margin-bottom: 6px;
+}
+
+.footer-subtext {
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom-line {
+  margin-top: 60px;
+}
