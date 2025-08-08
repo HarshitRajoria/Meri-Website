@@ -1,9 +1,15 @@
+
+
+
+
+
 body {
   margin: 0;
   background-image: url(Background-Grid.png);
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
+
 }
 
 .grid-background {
@@ -252,57 +258,64 @@ body {
   margin-top: 40px;
 }
 
-.work-intro {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: -20px;
-  margin-bottom: 20px;
+#work {
+  padding: 60px 0;
 }
 
-.projects-grid {
+.work-container {
+  width: 910px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px 28px;
+  gap: 60px;
 }
 
-.project-card {
+.project {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  font-family: "DM Sans", sans-serif;
+  gap: 15px;
 }
 
-.project-thumbnail {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background-color: #c7c7c7;
+.thumbnail-box {
+  width: 429px;
+  height: 335px;
+  background-color: white;
   border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
-.project-card h3 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0;
+.thumbnail-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-text {
+  max-width: 429px;
+}
+
+.project-title {
+  font-family: 'Newsreader', serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid black;
+  padding-bottom: 4px;
 }
 
 .project-tools {
-  font-size: 13px;
-  font-weight: 500;
-  color: #333;
-  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
 }
 
-.underline {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  margin: 2px 0;
-}
-
-.project-description {
-  font-size: 13px;
+.project-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
   line-height: 1.4;
-  color: #222;
-  margin: 0;
+  border-bottom: 4px solid black;
+  padding-bottom: 4px;
 }
