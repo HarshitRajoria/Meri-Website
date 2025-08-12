@@ -1,10 +1,9 @@
 body {
   margin: 0;
-  background-image: url(Background-Grid.webp);
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
-
+  background-color: #DCE9D8;
+  background-image: radial-gradient(#a3d894 0.8px, #DCE9D8 0.8px);
+  background-size: 16px 16px;
+  background-attachment: fixed;
 }
 
 .grid-background {
@@ -301,8 +300,12 @@ body {
   height: 336px;
 
   border-radius: 10px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+}
+
+.thumbnail-box :hover {
+  transform: scale(1.1);
 }
 
 .thumbnail-box img {
@@ -335,9 +338,9 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   color: #555;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   border-bottom: 1px solid black;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 }
 
 .project-desc {
@@ -346,4 +349,5 @@ body {
   line-height: 1.4;
   border-bottom: 3px solid black;
   padding-bottom: 4px;
+  margin-top: 8px;
 }
