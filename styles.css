@@ -352,3 +352,28 @@ body {
    html {
       scroll-behavior: smooth;
     }
+
+.interests-intro {
+  max-width: 910px;
+  margin: 60px auto 0;
+  padding: 0 20px;
+
+
+}
+
+.interests-intro h2 {
+
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 85px;
+  font-family: "Newsreader", serif;
+}
+
+.interests-intro p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
